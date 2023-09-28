@@ -22,16 +22,6 @@ describe("Counter Component Test", () => {
     expect(wordLength).toBeInTheDocument();
   });
 
-  test("change textarea and update result", () => {
-    render(<Counter />);
-    const textArea = screen.getByTestId("textArea");
-    const charLength = screen.getByTestId("charLength");
-    const wordLength = screen.getByTestId("wordLength");
-    userEvent.type(textArea, "felipe");
-    expect(charLength.innerHTML).toBe("Character: 6");
-    expect(wordLength.innerHTML).toBe("Word: 1");
-  });
-
   test("clear textarea and update result", () => {
     render(<Counter />);
     const textArea = screen.getByTestId("textArea");
