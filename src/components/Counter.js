@@ -24,7 +24,7 @@ export const Counter = () => {
       <textarea
         onChange={handleCount}
         ref={textRef}
-        data-testid="textAres"
+        data-testid="textArea"
         placeholder="Type or paste your text"
       ></textarea>
       <button
